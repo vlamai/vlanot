@@ -101,3 +101,13 @@ struct proc {
 
 - A process list contains information about all processes in the system. Each entry is found in what is sometimes called a process control block (PCB), which is really just a structure that contains information about a specific process.
 
+
+---
+
+RUNNING - the process is using the CPU right now
+
+READY - the process could be using the CPU right now but (alas) some other process is
+
+WAITING - the process is waiting on I/O (e.g., it issued a request to a disk)
+
+DONE - the process is finished executing
