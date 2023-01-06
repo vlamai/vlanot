@@ -89,3 +89,4 @@ struct proc {
 };
 ```
 
+The register context hold the state of the process. it is used to save and restore the state of the process.
