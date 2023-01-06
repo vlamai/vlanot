@@ -13,3 +13,7 @@ time sharing and space sharing is counterparts of each other.
 on top these mechanisms resides from **policy**. it is algorithm that decides which process to run next.
 
 Scheduling policy is a function that takes a set of processes and returns a process to run next.
+
+Address space is a set of memory locations that a process can access.
+
+Registers are small memory locations that are part of the processor.
