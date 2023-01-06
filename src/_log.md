@@ -30,11 +30,13 @@ Process API
 - Wait for Process() : suspends the execution of the calling thread until the specified process terminates.
 - Status of Process() : retrieves the termination status of the specified process.
 
-Transofrming a program into a process is called **loading**. it is done by the os.
+Transforming a program into a process is called **loading**. it is done by the os.
 
 **loading** is the process of transferring a program from secondary storage to main memory and initializing its execution.
 
-**memory allocation** is the process of reserving space in main memory for a process.
+**memory allocation** is the process of reserving space in main memory for a process. Run time stack and heap are two parts of the address space. **Stack** is used for local variables and function parameters. **Heap** is used for dynamically allocated data structures.
 
 **linking** is the process of combining all the object modules into a single executable file.
+
+**i\o related setup** is done by the os. for example, opening a file, reading from a file, writing to a file, closing a file.
 
