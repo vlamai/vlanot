@@ -17,3 +17,9 @@ Scheduling policy is a function that takes a set of processes and returns a proc
 Address space is a set of memory locations that a process can access.
 
 Registers are small memory locations that are part of the processor.
+For example :
+
+- Program counter (PC) : holds the address of the next instruction to be executed.
+- Frame pointer (FP) : holds the address of the top of the stack.
+- Stack pointer (SP) : holds the address of the bottom of the stack.
+
