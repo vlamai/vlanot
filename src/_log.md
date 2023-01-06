@@ -10,3 +10,5 @@ the os creates illusion of multiple processes running simultaneously by switchin
 
 time sharing and space sharing is counterparts of each other.
 
+on top these mechanisms resides from **policy**. it is algorithm that decides which process to run next.
+
