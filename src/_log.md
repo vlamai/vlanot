@@ -40,3 +40,9 @@ Transforming a program into a process is called **loading**. it is done by the o
 
 **i\o related setup** is done by the os. for example, opening a file, reading from a file, writing to a file, closing a file.
 
+The process can be in one of the following states :
+
+- Ready : the process is waiting to be assigned to a processor.
+- Running : the process is currently executing on a processor.
+- Blocked : the process is waiting for an event to occur, such as an i\o operation to complete.
+
