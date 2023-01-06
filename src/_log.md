@@ -48,3 +48,44 @@ The process can be in one of the following states :
 
 From ready to running, the process is said to be **scheduled**.
 from running to ready or blocked, the process is said to be **descheduled**.
+
+OS keep information about process in some sort of list called **process table**. it contains information about all the processes in the system.
+
+The snipped below is the process table in xv6.
+
+```c
+// the registers xv6 will save and restore
+// to stop and subsequently restart a process
+struct context {
+  int eip;
+  int esp;
+  int ebx;
+  int ecx;
+  int edx;
+  int esi;
+  int edi;
+  int ebp;
+};
+// the different states a process can be in
+enum proc_state { UNUSED, EMBRYO, SLEEPING,
+                  RUNNABLE, RUNNING, ZOMBIE };
+// the information xv6 tracks about each process
+// including its register context and state
+struct proc {
+  char *mem;                  // Start of process memory
+  uint sz;                    // Size of process memory
+  char *kstack;               // Bottom of kernel stack
+                              // for this process
+  enum proc_state state;      // Process state
+  int pid;                    // Process ID
+  struct proc *parent;        // Parent process
+  void *chan;                 // If !zero, sleeping on chan
+  int killed;                 // If !zero, has been killed
+  struct file *ofile[NOFILE]; // Open files
+  struct inode *cwd;          // Current directory
+  struct context context;     // Switch here to run process
+  struct trapframe *tf;       // Trap frame for the
+                              // current interrupt
+};
+```
+
