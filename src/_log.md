@@ -23,3 +23,9 @@ For example :
 - Frame pointer (FP) : holds the address of the top of the stack.
 - Stack pointer (SP) : holds the address of the bottom of the stack.
 
+Process API
+
+- CreateProcess() : creates a new process and its primary thread.
+- DestroyProcess() : terminates the specified process and all of its threads.
+- Wait for Process() : suspends the execution of the calling thread until the specified process terminates.
+- Status of Process() : retrieves the termination status of the specified process.
