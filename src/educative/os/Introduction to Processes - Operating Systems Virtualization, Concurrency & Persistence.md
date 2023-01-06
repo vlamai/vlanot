@@ -1,0 +1,11 @@
+In this chapter, we discuss one of the most fundamental abstractions that the OS provides to users: the **process**. The definition of a process, informally, is quite simple: it is a **running program**.
+
+The program itself is a lifeless thing: it just sits there on the disk, a bunch of instructions (and maybe some static data), waiting to spring into action. It is the operating system that takes these bytes and gets them running, transforming the program into something useful. It turns out that one often wants to run more than one program at once; for example, consider your desktop or laptop where you might like to run a web browser, mail program, a game, a music player, and so forth. In fact, a typical system may be seemingly running tens or even hundreds of processes at the same time. Doing so makes the system easy to use, as one never needs to be concerned with whether a CPU is available; one simply runs programs. Hence our challenge:
+
+> **THE CRUX OF THE PROBLEM:** **HOW TO PROVIDE THE ILLUSION OF MANY CPUs?**
+> 
+> Although there are only a few physical CPUs available, how can the OS provide the illusion of a nearly-endless supply of said CPUs?
+
+## Time sharing[#](https://www.educative.io/courses/operating-systems-virtualization-concurrency-persistence/JYg3Qvzgk82#Time-sharing)
+
+The OS creates this illusion by **virtualizing** the CPU. By running one process, then stopping it and running another, and so forth, the OS can promote the illusion that many virtual CPUs exist when in fact there is only one physical CPU (or a few). This basic technique, known as **time sharing** of the CPU, allows users to run as many concurrent processes as they would like; the potential cost is performance, as each will run more slowly if the CPU(s) must be shared. To implement the virtualization of the CPU, and to implement it well, the OS will need both some low-level machinery and some high-level intelligence. We call the low-level machinery **mechanisms**. Mechanisms are low-level methods or protocols that implement a needed piece of functionality. For example, we’ll learn later how to implement a **context switch**, which gives the OS the ability to stop running one program and start running another on a given CPU; this **time-sharing** mechanism is employed by all modern OSes.
