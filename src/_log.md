@@ -46,5 +46,3 @@ The process can be in one of the following states :
 - Running : the process is currently executing on a processor.
 - Blocked : the process is waiting for an event to occur, such as an i\o operation to complete.
 
-
-some changes
