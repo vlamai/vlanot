@@ -46,3 +46,5 @@ The process can be in one of the following states :
 - Running : the process is currently executing on a processor.
 - Blocked : the process is waiting for an event to occur, such as an i\o operation to complete.
 
+From ready to running, the process is said to be **scheduled**.
+from running to ready or blocked, the process is said to be **descheduled**.
