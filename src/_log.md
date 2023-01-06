@@ -29,3 +29,12 @@ Process API
 - DestroyProcess() : terminates the specified process and all of its threads.
 - Wait for Process() : suspends the execution of the calling thread until the specified process terminates.
 - Status of Process() : retrieves the termination status of the specified process.
+
+Transofrming a program into a process is called **loading**. it is done by the os.
+
+**loading** is the process of transferring a program from secondary storage to main memory and initializing its execution.
+
+**memory allocation** is the process of reserving space in main memory for a process.
+
+**linking** is the process of combining all the object modules into a single executable file.
+
