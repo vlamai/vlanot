@@ -12,3 +12,4 @@ tags: #dotnet, #csharp
 [[delegates and lambdas]]
 [[events]]
 [[exceptions]]
+[[garbage collection]]
