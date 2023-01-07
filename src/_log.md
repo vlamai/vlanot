@@ -10,6 +10,6 @@ three patterns:
 2. Asynchronous programming model (APM)
 3. Task-based asynchronous pattern (TAP)
 
-### TAP 
+### TAP
 
-witch use `Task` and `Task<T>` to represent asynchronous operations and used single operation to represent asynchronous operations.
+witch use `Task` and `Task<T>` to represent asynchronous operations and  uses a single method to represent the initiation and completion of an asynchronous operation.
