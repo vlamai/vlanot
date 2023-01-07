@@ -18,3 +18,6 @@ witch use `Task` and `Task<T>` to represent asynchronous operations and  uses a 
 
 [Implementing the Task-based Asynchronous Pattern](https://learn.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern)
 
+#### Initiate an asynchronous operation
+
+Async method based on the TAP 
