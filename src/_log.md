@@ -12,4 +12,4 @@ three patterns:
 
 ### TAP 
 
-TAP is the recommended pattern for asynchronous programming in .NET. It uses the Task and Task<T> types and the async and await keywords to represent asynchronous operations. The async and await keywords provide a convenient syntax for writing asynchronous code without manually manipulating threads. The Task and Task<T> types are abstractions that represent operations running in the background.
+witch use `Task` and `Task<T>` to represent asynchronous operations and used single operation to represent asynchronous operations.
