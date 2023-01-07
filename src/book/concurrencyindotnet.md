@@ -10,4 +10,4 @@ tags: #concurrency. #dotnet, #csharp, #fsharp
 
 Functions composition is the combining of functions in the manner where output of one function is the input of another function. This is a very powerful concept in functional programming. It allows us to create complex functions from simple ones. It also allows us to create a pipeline of functions that can be used to process data.
 
-Composition of functions 
+Composition of functions used functions without side effects.
