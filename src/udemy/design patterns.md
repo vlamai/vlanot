@@ -364,7 +364,7 @@ public class TracikngThemeFactory
 ## Structural Patterns
 
 - concerned with structure (e.g. class members)
-- imporatnce for good API design
+- importance for good API design
 
 ## Behavioral Patterns
 
