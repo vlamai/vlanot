@@ -14,3 +14,4 @@ tags: #dotnet, #csharp
 [[exceptions]]
 [[generic types]]
 [[type system]]
+[[unsafe code]]
