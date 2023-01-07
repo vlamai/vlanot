@@ -13,3 +13,4 @@ tags: #dotnet, #csharp
 [[events]]
 [[exceptions]]
 [[garbage collection]]
+[[generic types]]
