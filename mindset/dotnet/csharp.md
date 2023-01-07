@@ -11,3 +11,4 @@ tags: #dotnet, #csharp
 [[reflection]]
 [[delegates and lambdas]]
 [[events]]
+[[exceptions]]
