@@ -12,5 +12,5 @@ tags: #dotnet, #csharp
 [[delegates and lambdas]]
 [[events]]
 [[exceptions]]
-[[garbage collection]]
 [[generic types]]
+[[type system]]
