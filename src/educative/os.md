@@ -114,6 +114,42 @@ DONE - the process is finished executing
 ## process api
 
 - fork() : creates a new process by duplicating the calling process. the new process, referred to as the child, is an exact duplicate of the calling process, referred to as the parent. the child process is created with a new process ID, but with the same parent process ID as the calling process. the child process is initially in the same state as the parent process. the child process inherits a duplicate of the address space of the parent process, but the two address spaces are completely separate. the child process begins execution at fork().
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char* argv[]){
+
+  printf("hello world (pid:%d)\n", (int)getpid());
+  fflush(stdout);
+  int rc = fork();
+  if (rc < 0) {
+    // fork failed
+    fprintf(stderr, "fork failed\n");
+    exit(1);
+  }
+  else if (rc == 0){
+    // child (new process)
+    printf("hello, I am child (pid:%d)\n", (int)getpid());
+  }
+  else{
+    // parent goes down this path (main)
+    printf("hello, I am parent of %d (pid:%d)\n", rc, (int)getpid());
+  }
+  return 0;
+  
+}
+```
+
+output :
+
+```sh
+hello world (pid:1)
+hello, I am parent of 2 (pid:1)
+hello, I am child (pid:2)
+```
+
 - exec() : replaces the current process image with a new process image. the new image is loaded from an executable file whose name is given in filename. the new image is constructed from a copy of the calling process, referred to as the parent process. the new image is constructed by duplicating the parent process, referred to as the child process. the child process is created with a new process ID, but with the same parent process ID as the parent process. the child process is initially in the same state as the parent process. the child process inherits a duplicate of the address space of the parent process, but the two address spaces are completely separate. the child process begins execution at the entry point of the new image.
 - wait() : suspends execution of the calling process until one of its children terminates. the call wait(&status) suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing unwaited-for children, then wait() returns immediately with a return value of -1. if the calling process has one or more unwaited-for children, then wait() suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing unwaited-for children, then wait() returns immediately with a return value of -1. if the calling process has one or more unwaited-for children, then wait() suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing unwaited-for children, then wait() returns immediately with a return value of -1. if the calling process has one or more unwaited-for children, then wait() suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing unwaited-for children, then wait() returns immediately with a return value of -1. if the calling process has one or more unwaited-for children, then wait() suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing unwaited-for children, then wait() returns immediately with a return value of -1. if the calling process has one or more unwaited-for children, then wait() suspends execution of the calling process until one of its children terminates. the status argument is used to return the termination status of the child process. the wait() call returns the process ID of the terminated child process. if the calling process has no existing
-
