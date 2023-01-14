@@ -238,3 +238,5 @@ fork only used to create a copy of same process. but exec() is used to create a 
 kill() used to send signal to process.
 signal() used to handle signal.
 
+### direct execution
+
