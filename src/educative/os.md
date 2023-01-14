@@ -267,4 +267,8 @@ Second is preemptive approach. In this approach, the kernel can interrupt a proc
 
 Context switch. A context switch is the process of saving the state of a process and then restoring the state of another process. The kernel performs a context switch when it switches from one process to another.
 
+To measure time of context switch using tool like lmbench.
 
+```sh
+lmbench -P 1 -N 1000 -s 64 -c context
+```
