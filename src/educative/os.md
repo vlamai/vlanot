@@ -110,3 +110,9 @@ READY - the process could be using the CPU right now but (alas) some other proce
 WAITING - the process is waiting on I/O (e.g., it issued a request to a disk)
 
 DONE - the process is finished executing
+
+
+## process api 
+
+- fork() : creates a new process by duplicating the calling process. the new process, referred to as the child, is an exact duplicate of the calling process, referred to as the parent. the child process is created with a new process ID, but with the same parent process ID as the calling process. the child process is initially in the same state as the parent process. the child process inherits a duplicate of the address space of the parent process, but the two address spaces are completely separate. the child process begins execution at fork().
+- 
