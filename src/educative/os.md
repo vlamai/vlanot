@@ -253,4 +253,8 @@ system-call interface : the interface between user programs and the kernel. The 
 
 system-call handler : the code in the kernel that handles a particular system call.
 
+privileged operations : operations that are only allowed in kernel mode. For example, the kernel can read and write any memory address, but user programs can only read and write their own memory.
+
+Limited direct execution protocol. LDE is a mechanism that allows the kernel to execute code in user mode. The kernel uses LDE to execute the system-call handler in user mode.
+
 
