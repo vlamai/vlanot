@@ -245,3 +245,12 @@ kernel mode. Code that runs in kernel mode is not restricted in what it can do.
 
 trap instructions simultaneously switch to kernel mode and cause the kernel to handle the trap. The kernel can then switch back to user mode and resume the process.
 
+trap table : a table of trap handlers. The kernel uses the trap table to find the handler for a particular trap.
+
+system-call number : a number that identifies a particular system call. The system-call number is passed to the kernel as part of the trap instruction.
+
+system-call interface : the interface between user programs and the kernel. The system-call interface consists of the trap table and the system-call numbers.
+
+system-call handler : the code in the kernel that handles a particular system call.
+
+
