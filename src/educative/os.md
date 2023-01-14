@@ -240,6 +240,8 @@ signal() used to handle signal.
 
 ### direct execution
 
+#### restricted operations
+
 user mode. Code that runs in user mode is restricted in what it can do.
 kernel mode. Code that runs in kernel mode is not restricted in what it can do.
 
@@ -256,5 +258,7 @@ system-call handler : the code in the kernel that handles a particular system ca
 privileged operations : operations that are only allowed in kernel mode. For example, the kernel can read and write any memory address, but user programs can only read and write their own memory.
 
 Limited direct execution protocol. LDE is a mechanism that allows the kernel to execute code in user mode. The kernel uses LDE to execute the system-call handler in user mode.
+
+#### switching between processes
 
 
