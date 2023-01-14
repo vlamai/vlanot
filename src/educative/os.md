@@ -241,3 +241,7 @@ signal() used to handle signal.
 ### direct execution
 
 user mode. Code that runs in user mode is restricted in what it can do.
+kernel mode. Code that runs in kernel mode is not restricted in what it can do.
+
+trap instructions simultaneously switch to kernel mode and cause the kernel to handle the trap. The kernel can then switch back to user mode and resume the process.
+
