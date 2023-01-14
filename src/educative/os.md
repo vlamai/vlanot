@@ -240,3 +240,4 @@ signal() used to handle signal.
 
 ### direct execution
 
+user mode. Code that runs in user mode is restricted in what it can do.
