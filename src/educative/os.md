@@ -261,4 +261,10 @@ Limited direct execution protocol. LDE is a mechanism that allows the kernel to 
 
 #### switching between processes
 
+First is cooperative approach. In this approach, a process voluntarily gives up the CPU when it is done with its current task. The kernel then schedules another process to run.
+
+Second is preemptive approach. In this approach, the kernel can interrupt a process at any time and schedule another process to run. The kernel can interrupt a process in order to perform a trap, or it can interrupt a process in order to perform a time slice.
+
+Context switch. A context switch is the process of saving the state of a process and then restoring the state of another process. The kernel performs a context switch when it switches from one process to another.
+
 
