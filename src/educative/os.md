@@ -394,3 +394,7 @@ cfs scheduling. CFS scheduling is a preemptive scheduling algorithm. CFS schedul
 | Mac OS X | priority |
 | Solaris | priority |
 | FreeBSD | priority |
+
+### multi-level feedback
+
+multi-level feedback queue scheduling. Multi-level feedback queue scheduling is a preemptive scheduling algorithm. Multi-level feedback queue scheduling is simple, easy to implement, and starvation-free. Multi-level feedback queue scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
