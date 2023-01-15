@@ -339,7 +339,8 @@ Description of the above graph. process 1 is the shortest job, so it will be exe
 #### round-robin (RR)
 
 round-robin (RR) scheduling. RR scheduling is a preemptive scheduling algorithm. RR scheduling is simple, easy to implement, and starvation-free. RR scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
-
+In short, RR scheduling is a preemptive scheduling algorithm that selects the waiting process with the smallest remaining execution time to execute next.
+The basic idea is 
 ```mermaid
 graph LR
 A[process 1] --> B[process 2]
