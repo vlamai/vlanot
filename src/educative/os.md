@@ -297,3 +297,5 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 #### first-come, first-served (FCFS) or first in, first out (FIFO)
 
+Convoy effect. A convoy effect occurs when a process that arrives later has to wait for a process that arrived earlier to finish.
+
