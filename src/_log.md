@@ -11,6 +11,15 @@ var types = AppDomain.CurrentDomain.GetAssemblies()
     .Where(p => typeof(IInterface).IsAssignableFrom(p));
 ```
 
+How to find in c# all class that implement interface with specific generic type?
+
+```csharp
+
+var types = AppDomain.CurrentDomain.GetAssemblies()
+    .SelectMany(s => s.GetTypes())
+    .Where(p => typeof(IInterface<>).IsAssignableFrom(p) && p.IsGenericType);
+```
+
 ## 2023-14-01
 
 [Снижение аллокации при замыкании (closure)](https://habr.com/ru/post/677818/)
