@@ -299,3 +299,10 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 Convoy effect. A convoy effect occurs when a process that arrives later has to wait for a process that arrived earlier to finish.
 
+#### shortest job first (SJF)
+
+shortest job first (SJF) scheduling. SJF scheduling is a non-preemptive scheduling algorithm. SJF scheduling selects the waiting process with the smallest execution time to execute next. SJF scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### shortest remaining time first (SRTF)
+
+shortest remaining time first (SRTF) scheduling. SRTF scheduling is a preemptive scheduling algorithm. SRTF scheduling selects the waiting process with the smallest remaining execution time to execute next. SRTF scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
