@@ -295,7 +295,7 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 **turnaround time** : the time from when a process arrives in the ready queue until it finishes execution. turnaround time = completion time - arrival time.
 
-response time : the time from when a process arrives in the ready queue until it starts execution. response time = start time - arrival time.
+**response time** : the time from when a process arrives in the ready queue until it starts execution. response time = start time - arrival time.
 
 #### first-come, first-served (FCFS) or first in, first out (FIFO)
 
@@ -333,3 +333,5 @@ multi-level feedback queue scheduling. Multi-level feedback queue scheduling is 
 | starvation-free | no | no | no | yes | no | yes | yes |
 | optimal | no | yes | yes | yes | yes | yes | yes |
 | average waiting time | no | yes | yes | yes | yes | yes | yes |
+
+#### 
