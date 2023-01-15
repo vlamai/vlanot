@@ -301,27 +301,44 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 Convoy effect. A convoy effect occurs when a process that arrives later has to wait for a process that arrived earlier to finish.
 
+```mermaid
+graph LR
+A[process 1] --> B[process 2]
+B --> C[process 3]
+C --> D[process 4]
+```
+
+Description of the above graph. process 1 is the first process to arrive, so it will be executed first. process 2 is the second process to arrive, so it will be executed second. process 3 is the third process to arrive, so it will be executed third. process 4 is the last process to arrive, so it will be executed last.
+
 #### shortest job first (SJF)
 
 shortest job first (SJF) scheduling. SJF scheduling is a non-preemptive scheduling algorithm. SJF scheduling selects the waiting process with the smallest execution time to execute next. SJF scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+```mermaid
+graph LR
+A[process 1] --> B[process 2]
+B --> C[process 3]
+C --> D[process 4]
+```
+
+Description of the above graph. process 1 is the shortest job, so it will be executed first. process 2 is the second shortest job, so it will be executed second. process 3 is the third shortest job, so it will be executed third. process 4 is the longest job, so it will be executed last.
 
 #### shortest remaining time first (SRTF)
 
 shortest remaining time first (SRTF) scheduling. SRTF scheduling is a preemptive scheduling algorithm. SRTF scheduling selects the waiting process with the smallest remaining execution time to execute next. SRTF scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
 
+```mermaid
+graph LR
+A[process 1] --> B[process 2]
+B --> C[process 3]
+C --> D[process 4]
+```
+
+Description of the above graph. process 1 is the shortest job, so it will be executed first. process 2 is the second shortest job, so it will be executed second. process 3 is the third shortest job, so it will be executed third. process 4 is the longest job, so it will be executed last.
+
 #### round-robin (RR)
 
 round-robin (RR) scheduling. RR scheduling is a preemptive scheduling algorithm. RR scheduling is simple, easy to implement, and starvation-free. RR scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
-
-```mermaid
-graph LR
-A[process] --> B((ready queue))
-B --> C{CPU}
-C --> D{time slice}
-D --> E[process]
-E --> F[process]
-F --> G[process]
-```
 
 #### priority scheduling
 
