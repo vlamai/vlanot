@@ -394,4 +394,3 @@ cfs scheduling. CFS scheduling is a preemptive scheduling algorithm. CFS schedul
 | Mac OS X | priority |
 | Solaris | priority |
 | FreeBSD | priority |
-
