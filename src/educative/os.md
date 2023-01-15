@@ -325,13 +325,26 @@ multi-level queue scheduling. Multi-level queue scheduling is a preemptive sched
 
 multi-level feedback queue scheduling. Multi-level feedback queue scheduling is a preemptive scheduling algorithm. Multi-level feedback queue scheduling is simple, easy to implement, and starvation-free. Multi-level feedback queue scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
 
+#### cfs scheduling
+
+cfs scheduling. CFS scheduling is a preemptive scheduling algorithm. CFS scheduling is simple, easy to implement, and starvation-free. CFS scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
 #### comparison
 
-| scheduling algorithm | FCFS | SJF | SRTF | RR | priority | multi-level queue | multi-level feedback queue |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| preemptive | no | no | yes | yes | yes | yes | yes |
-| starvation-free | no | no | no | yes | no | yes | yes |
-| optimal | no | yes | yes | yes | yes | yes | yes |
-| average waiting time | no | yes | yes | yes | yes | yes | yes |
+| scheduling algorithm | FCFS | SJF | SRTF | RR | priority | multi-level queue | multi-level feedback queue | cfs |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| preemptive | no | no | yes | yes | yes | yes | yes | yes |
+| starvation-free | no | no | no | yes | no | yes | yes | yes |
+| optimal | no | yes | yes | yes | yes | yes | yes | yes |
+| average waiting time | no | yes | yes | yes | yes | yes | yes | yes |
 
-#### 
+#### application in different OS 
+
+| OS | scheduling algorithm |
+| --- | --- |
+| Linux | CFS |
+| Windows | priority |
+| Mac OS X | priority |
+| Solaris | priority |
+| FreeBSD | priority |
+
