@@ -291,3 +291,6 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 ### cpu scheduling
 
+**workload** : how many resources are needed to run a process. CPU bound process, I/O bound process.
+
+**turnaround time** : the time from when a process arrives in the ready queue until it finishes execution.
