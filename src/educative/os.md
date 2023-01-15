@@ -289,3 +289,5 @@ Once a program is running, the OS must use hardware mechanisms to ensure the use
 
 Sometimes the OS, during a timer interrupt or system call, might wish to switch from running the current process to a different one, a low-level technique known as a context switch.
 
+### cpu scheduling
+
