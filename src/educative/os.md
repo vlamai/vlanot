@@ -340,9 +340,27 @@ Description of the above graph. process 1 is the shortest job, so it will be exe
 
 round-robin (RR) scheduling. RR scheduling is a preemptive scheduling algorithm. RR scheduling is simple, easy to implement, and starvation-free. RR scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
 
+```mermaid
+graph LR
+A[process 1] --> B[process 2]
+B --> C[process 3]
+C --> D[process 4]
+```
+
+Description of the above graph. process 1 is the first process to arrive, so it will be executed first. process 2 is the second process to arrive, so it will be executed second. process 3 is the third process to arrive, so it will be executed third. process 4 is the last process to arrive, so it will be executed last.
+
 #### priority scheduling
 
 priority scheduling. Priority scheduling is a preemptive scheduling algorithm. Priority scheduling selects the waiting process with the highest priority to execute next. Priority scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+```mermaid
+graph LR
+A[process 1] --> B[process 2]
+B --> C[process 3]
+C --> D[process 4]
+```
+
+Description of the above graph. process 1 is the highest priority, so it will be executed first. process 2 is the second highest priority, so it will be executed second. process 3 is the third highest priority, so it will be executed third. process 4 is the lowest priority, so it will be executed last.
 
 #### multi-level queue scheduling
 
@@ -365,7 +383,7 @@ cfs scheduling. CFS scheduling is a preemptive scheduling algorithm. CFS schedul
 | optimal | no | yes | yes | yes | yes | yes | yes | yes |
 | average waiting time | no | yes | yes | yes | yes | yes | yes | yes |
 
-#### application in different OS 
+#### application in different OS
 
 | OS | scheduling algorithm |
 | --- | --- |
