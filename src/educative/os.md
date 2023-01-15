@@ -295,6 +295,8 @@ Sometimes the OS, during a timer interrupt or system call, might wish to switch 
 
 **turnaround time** : the time from when a process arrives in the ready queue until it finishes execution. turnaround time = completion time - arrival time.
 
+response time : the time from when a process arrives in the ready queue until it starts execution. response time = start time - arrival time.
+
 #### first-come, first-served (FCFS) or first in, first out (FIFO)
 
 Convoy effect. A convoy effect occurs when a process that arrives later has to wait for a process that arrived earlier to finish.
@@ -306,3 +308,28 @@ shortest job first (SJF) scheduling. SJF scheduling is a non-preemptive scheduli
 #### shortest remaining time first (SRTF)
 
 shortest remaining time first (SRTF) scheduling. SRTF scheduling is a preemptive scheduling algorithm. SRTF scheduling selects the waiting process with the smallest remaining execution time to execute next. SRTF scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### round-robin (RR)
+
+round-robin (RR) scheduling. RR scheduling is a preemptive scheduling algorithm. RR scheduling is simple, easy to implement, and starvation-free. RR scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### priority scheduling
+
+priority scheduling. Priority scheduling is a preemptive scheduling algorithm. Priority scheduling selects the waiting process with the highest priority to execute next. Priority scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### multi-level queue scheduling
+
+multi-level queue scheduling. Multi-level queue scheduling is a preemptive scheduling algorithm. Multi-level queue scheduling is simple, easy to implement, and starvation-free. Multi-level queue scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### multi-level feedback queue scheduling
+
+multi-level feedback queue scheduling. Multi-level feedback queue scheduling is a preemptive scheduling algorithm. Multi-level feedback queue scheduling is simple, easy to implement, and starvation-free. Multi-level feedback queue scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
+
+#### comparison
+
+| scheduling algorithm | FCFS | SJF | SRTF | RR | priority | multi-level queue | multi-level feedback queue |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| preemptive | no | no | yes | yes | yes | yes | yes |
+| starvation-free | no | no | no | yes | no | yes | yes |
+| optimal | no | yes | yes | yes | yes | yes | yes |
+| average waiting time | no | yes | yes | yes | yes | yes | yes |
