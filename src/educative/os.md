@@ -313,6 +313,8 @@ shortest remaining time first (SRTF) scheduling. SRTF scheduling is a preemptive
 
 round-robin (RR) scheduling. RR scheduling is a preemptive scheduling algorithm. RR scheduling is simple, easy to implement, and starvation-free. RR scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
 
+```marm
+
 #### priority scheduling
 
 priority scheduling. Priority scheduling is a preemptive scheduling algorithm. Priority scheduling selects the waiting process with the highest priority to execute next. Priority scheduling is optimal in the sense that it minimizes the average waiting time for processes arriving during the execution of the CPU.
